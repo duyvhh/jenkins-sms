@@ -1,6 +1,6 @@
 <!--
-  This view is used to render the installed plugins page.
+  This view is used to render the installed plugin page.
 -->
 <div>
-    This is a plugin to send SMS notification using Hoiio service
+    This is a plugin to send SMS notification for failed build.
 </div>
