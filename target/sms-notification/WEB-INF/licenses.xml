@@ -1,0 +1,60 @@
+<l:dependencies xmlns:l='licenses' groupId='com.hoiio.jenkins' artifactId='sms-notification' version='1.0-SNAPSHOT'>
+  <l:dependency name='SMS Notification' groupId='com.hoiio.jenkins' artifactId='sms-notification' version='1.0-SNAPSHOT' url='http://jenkins-ci.org/plugin/sms-notification/'>
+    <l:description>This plugin allows the user to notify the team via SMS for any unstable build, using Hoiio API. Visit developer.hoiio.com to learn more about Hoiio API</l:description>
+  </l:dependency>
+  <l:dependency name='HttpClient' groupId='org.apache.httpcomponents' artifactId='httpclient' version='4.2.1' url='http://hc.apache.org/httpcomponents-client'>
+    <l:description>HttpComponents Client (base module)</l:description>
+    <l:license name='Apache License' url='LICENSE.txt' />
+  </l:dependency>
+  <l:dependency name='ezmorph' groupId='net.sf.ezmorph' artifactId='ezmorph' version='1.0.6' url='http://ezmorph.sourceforge.net'>
+    <l:description>Simple java library for transforming an Object to another Object.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='hoiio-sdk-java' groupId='com.hoiio' artifactId='hoiio-sdk-java' version='2.1.6'>
+    <l:description />
+  </l:dependency>
+  <l:dependency name='json-lib' groupId='net.sf.json-lib' artifactId='json-lib' version='2.4' url='http://json-lib.sourceforge.net'>
+    <l:description>Java library for transforming beans, maps, collections, java
+      arrays and XML to JSON.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='Guava: Google Core Libraries for Java' groupId='com.google.guava' artifactId='guava' version='14.0.1' url='http://code.google.com/p/guava-libraries/guava'>
+    <l:description>Guava is a suite of core and expanded libraries that include
+    utility classes, google's collections, io classes, and much
+    much more.
+
+    Guava has two code dependencies - javax.annotation
+    per the JSR-305 spec and javax.inject per the JSR-330 spec.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='Commons Collections' groupId='commons-collections' artifactId='commons-collections' version='3.2.1' url='http://commons.apache.org/collections/'>
+    <l:description>Types that extend and augment the Java Collections Framework.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='Commons BeanUtils' groupId='commons-beanutils' artifactId='commons-beanutils' version='1.8.0' url='http://commons.apache.org/beanutils/'>
+    <l:description>BeanUtils provides an easy-to-use but flexible wrapper around reflection and introspection.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='Commons Lang' groupId='commons-lang' artifactId='commons-lang' version='2.5' url='http://commons.apache.org/lang/'>
+    <l:description>Commons Lang, a package of Java utility classes for the
+        classes that are in java.lang's hierarchy, or are considered to be so
+        standard as to justify existence in java.lang.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='HttpCore' groupId='org.apache.httpcomponents' artifactId='httpcore' version='4.2.1' url='http://hc.apache.org/httpcomponents-core-ga'>
+    <l:description>HttpComponents Core (blocking I/O)</l:description>
+    <l:license name='Apache License' url='LICENSE.txt' />
+  </l:dependency>
+  <l:dependency name='Commons Codec' groupId='commons-codec' artifactId='commons-codec' version='1.6' url='http://commons.apache.org/codec/'>
+    <l:description>The codec package contains simple encoder and decoders for
+     various formats such as Base64 and Hexadecimal.  In addition to these
+     widely used encoders and decoders, the codec package also maintains a
+     collection of phonetic encoding utilities.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+  <l:dependency name='Commons Logging' groupId='commons-logging' artifactId='commons-logging' version='1.1.1' url='http://commons.apache.org/logging'>
+    <l:description>Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</l:description>
+    <l:license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </l:dependency>
+</l:dependencies>

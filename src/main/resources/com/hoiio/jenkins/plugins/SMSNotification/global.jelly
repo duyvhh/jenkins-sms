@@ -1,0 +1,15 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:section title="Hoiio Credentials">
+        <f:entry
+                title="App ID"
+                field="appId">
+            <f:textbox name="hoiio.appId" />
+        </f:entry>
+
+        <f:entry
+                title="Access Token"
+                field="accessToken">
+            <f:textbox name="hoiio.accessToken" />
+        </f:entry>
+    </f:section>
+</j:jelly>

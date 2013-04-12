@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>1.480.3</version><!-- which version of Jenkins is this plugin built against? -->
+    </parent>
+
+    <groupId>com.hoiio.jenkins</groupId>
+    <artifactId>sms-notification</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>hpi</packaging>
+    <name>SMS Notification</name>
+
+    <description>This plugin allows the user to notify the team via SMS for any unstable build, using Hoiio API. Visit developer.hoiio.com to learn more about Hoiio API</description>
+
+    <properties>
+        <com.hoiio.java-version>2.1.6</com.hoiio.java-version>
+        <net.sf.json-lib-version>2.4</net.sf.json-lib-version>
+        <httpCore-version>4.2.1</httpCore-version>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>steve</id>
+            <name>Steve Van</name>
+        </developer>
+    </developers>
+
+    <scm>
+    </scm>
+
+    <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+
+        <repository>
+            <id>project.local</id>
+            <name>project</name>
+            <url>file:${project.basedir}/repo</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>14.0.1</version>
+        </dependency>
+
+        <!-- Hoiio sdk -->
+        <dependency>
+            <groupId>com.hoiio</groupId>
+            <artifactId>hoiio-sdk-java</artifactId>
+            <version>${com.hoiio.java-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>${net.sf.json-lib-version}</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+
+        <!-- HTTP Core for Hoiio sdk -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>${httpCore-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpCore-version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
