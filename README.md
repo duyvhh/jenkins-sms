@@ -10,15 +10,15 @@ Read the documentation at http://hoiio.readthedocs.org/
 
 You can find the plugin in Jenkins' plugin site. Plugin's name is "sms-notification"
 
-## Get Hoiio Developer Account
+### Get Hoiio Developer Account
 
 Visit [Hoiio Developer][homepage] site to get a Hoiio Developer account.
 
-## Get AppID and Access Token
+### Get AppID and Access Token
 
 Login to Hoiio Developer's portal, create an app. Then, click on "View Keys" to retrieve the appID and accessToken
 
-## Setup
+### Setup
 
 Go to Manage Jenkins -> Configure System, navigate to "Hoiio Credentials" and fill in the appId and accessToken of your Hoiio Developer account
 
