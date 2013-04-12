@@ -40,6 +40,7 @@ import hudson.tasks.Publisher;
 import hudson.util.FormValidation;
 import net.sf.json.JSONObject;
 import org.kohsuke.stapler.DataBoundConstructor;
+import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 
@@ -80,7 +81,11 @@ public class SMSNotification extends Notifier {
                 return true;
             }
 
-            String message = "Failed build: " + build.getDisplayName() + " at " + getDateString(build.getTime());
+            String message = "Jenkins Build failed: " + build.getProject().getDisplayName() + " at " + getDateString(build.getTime());
+
+            if (message.length() > 150) {
+                message =  "Jenkins Build failed: " + build.getProject().getDisplayName().substring(0, 100) + "... " + " at " + getDateString(build.getTime());
+            }
 
             List<String> receiverList = new ArrayList<String>();
 
@@ -90,7 +95,7 @@ public class SMSNotification extends Notifier {
 
             try {
                 Hoiio hoiio = new Hoiio(appId, accessToken);
-                hoiio.getSmsService().sendBulk(receiverList, message, "Jenkins", "jenkins", "");
+                hoiio.getSmsService().sendBulk(receiverList, message);
             } catch (HoiioException e) {
                 listener.error(
                         "Failed to send SMS notification: " + e.getMessage());
@@ -136,9 +141,9 @@ public class SMSNotification extends Notifier {
             return true;
         }
 
-
+        @Override
         public String getDisplayName() {
-            return "Send SMS Notification";
+            return "SMS Notification";
         }
 
         @Override
@@ -165,11 +170,9 @@ public class SMSNotification extends Notifier {
             this.accessToken = accessToken;
         }
 
-        public FormValidation doNumberCheck(final StaplerRequest req, StaplerResponse rsp) throws IOException, ServletException {
-            String param = req.getParameter("recipients");
-
+        public FormValidation doNumberCheck(@QueryParameter String param) throws IOException, ServletException {
             if (param == null || param.trim().length() == 0) {
-                return FormValidation.error("Recipients' numbers are empty");
+                return FormValidation.warning("You must fill recipients' numbers!");
             }
 
             param = param.trim().replaceAll("\\s","");

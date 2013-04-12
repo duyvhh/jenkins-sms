@@ -2,14 +2,14 @@
     <f:section title="Hoiio Credentials">
         <f:entry
                 title="App ID"
-                help="/plugin/SMSNotification/help-appId.html"
+                help="/plugin/sms-notification/help-appId.html"
                 field="appId">
             <f:textbox name="hoiio.appId" />
         </f:entry>
 
         <f:entry
                 title="Access Token"
-                help="/plugin/SMSNotification/help-accessToken.html"
+                help="/plugin/sms-notification/help-accessToken.html"
                 field="accessToken">
             <f:textbox name="hoiio.accessToken" />
         </f:entry>
