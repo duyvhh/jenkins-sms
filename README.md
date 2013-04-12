@@ -8,7 +8,7 @@ Read the documentation at http://hoiio.readthedocs.org/
 
 ## Installation
 
-You can find the plugin in Jenkins' plugin site. Plugin's name is "sms-notification"
+You can find the plugin in Jenkins' plugin site. Plugin's name is "sms-notification" (pending approval from Jenkins team)
 
 ### Get Hoiio Developer Account
 
