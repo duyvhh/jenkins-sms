@@ -1,3 +1,4 @@
 # Other files and folders
-.idea/
+.idea
 target
+sms-notification.iml
