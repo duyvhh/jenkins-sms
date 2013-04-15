@@ -10,7 +10,7 @@
 
     <groupId>com.hoiio.jenkins</groupId>
     <artifactId>sms-notification</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <name>SMS Notification</name>
 
