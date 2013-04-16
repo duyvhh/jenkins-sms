@@ -9,7 +9,7 @@
     <url>https://wiki.jenkins-ci.org/display/JENKINS/SMS+Notification</url>
 
     <groupId>com.hoiio.jenkins</groupId>
-    <artifactId>sms-notification</artifactId>
+    <artifactId>sms</artifactId>
     <version>1.1-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <name>SMS Notification</name>
