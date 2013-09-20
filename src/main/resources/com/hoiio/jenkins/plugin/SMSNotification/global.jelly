@@ -1,5 +1,5 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-    <f:section title="Hoiio Credentials">
+    <f:section title="SMS Notification Credentials (powered by Hoiio)">
         <f:entry
                 title="App ID"
                 help="/plugin/sms-notification/help-appId.html"
